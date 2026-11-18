@@ -37,4 +37,6 @@ The following security measures are currently supported:
   3. Authorization of read / write operations by clients
   4. Authorization is pluggable and integration with external authorization services is supported
 
-It's worth noting that security is optional - non-secured clusters are supported, as well as a mix of authenticated, unauthenticated, encrypted and non-encrypted clients. The guides below explain how to configure and use the security features in both clients and brokers. 
+It's worth noting that security is optional - non-secured clusters are supported, as well as a mix of authenticated, unauthenticated, encrypted and non-encrypted clients. The guides below explain how to configure and use the security features in both clients and brokers.
+
+For a practical security assessment of an exposed PLAINTEXT listener, see [Kafka Pentest Port 9092: Message Interception and Message Injection](https://en.hackita.it/articoli/porta-9092-kafka/). It walks through broker discovery, topic enumeration, message consumption and production, and the risks created by missing authentication or overly permissive authorization. 
